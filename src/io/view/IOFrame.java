@@ -6,8 +6,13 @@ import javax.swing.JFrame;
 
 public class IOFrame extends JFrame
 {
-	
+	/**
+	 * reference to the IOPanel.
+	 */
 	private IOPanel basePanel;
+	/**
+	 * Referenc to the IOController.
+	 */
 	private IOController baseController;
 	
 	public IOFrame(IOController baseController)

@@ -18,6 +18,9 @@ import io.view.IOFrame;
  */
 public class IOController
 {
+	/**
+	 * Reference to the GUI Frame for the project.
+	 */
 	private IOFrame	appFrame;
 	/**
 	 * The ArrayList for the projectGames from the class Game.
@@ -184,7 +187,10 @@ public class IOController
 		}
 		return isNumber;
 	}
-	
+	/**
+	 * saves a Game object to the drive and sperates each Game object with a semicolon.
+	 * @param currentGame
+	 */
 	public void saveGameInformation(Game currentGame)
 	{
 		PrintWriter gameWriter;
@@ -213,6 +219,7 @@ public class IOController
 	}
 	
 	/**
+	 * Getter for the ProjectGames
 	 * @return the projectGames
 	 */
 	public ArrayList<Game> getProjectGames()
@@ -222,7 +229,7 @@ public class IOController
 	
 	/**
 	 * @param projectGames
-	 *            the projectGames to set
+	 *    Setter for the ProjectGames
 	 */
 	public void setProjectGames(ArrayList<Game> projectGames)
 	{
